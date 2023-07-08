@@ -2,8 +2,11 @@
 title: "About"
 ---
 
-About this site
+## Who I am
+My name is Alan Tao, I'm going to be attending Newton North High School in September 2023.
 
-```{r}
-1 + 1
-```
+Email: alantaolr@outlook.com
+
+## The Project
+- This project was created as a part of [Kane’s Data Science Bootcamp](https://bootcamp.davidkane.info/)
+

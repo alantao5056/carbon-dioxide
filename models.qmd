@@ -1,0 +1,6 @@
+---
+title: "models"
+editor: source
+---
+
+yay models

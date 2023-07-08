@@ -1,0 +1,44 @@
+[
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "My name is Alan Tao, I’m going to be attending Newton North High School in September 2023.\nEmail: alantaolr@outlook.com"
+  },
+  {
+    "objectID": "models.html",
+    "href": "models.html",
+    "title": "models",
+    "section": "",
+    "text": "yay models"
+  },
+  {
+    "objectID": "sorces.html",
+    "href": "sorces.html",
+    "title": "sources",
+    "section": "",
+    "text": "yay sorces"
+  },
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "sources",
+    "section": "",
+    "text": "yay sources"
+  },
+  {
+    "objectID": "about.html#who-i-am",
+    "href": "about.html#who-i-am",
+    "title": "About",
+    "section": "",
+    "text": "My name is Alan Tao, I’m going to be attending Newton North High School in September 2023.\nEmail: alantaolr@outlook.com"
+  },
+  {
+    "objectID": "about.html#the-project",
+    "href": "about.html#the-project",
+    "title": "About",
+    "section": "The Project",
+    "text": "The Project\n\nThis project was created as a part of Kane’s Data Science Bootcamp"
+  }
+]

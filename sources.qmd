@@ -1,0 +1,13 @@
+---
+title: "Sources"
+editor: source
+---
+
+## Data
+I used kaggle.com for all my datasets. 
+
+- https://www.kaggle.com/datasets/ankanhore545/carbon-dioxide-emissions-of-the-world
+- https://www.kaggle.com/datasets/sevgisarac/temperature-change
+
+## Cleaning the Data
+- I have shrunk the data into only years from 1990 to 2018. 
