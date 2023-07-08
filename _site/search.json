@@ -11,7 +11,7 @@
     "href": "models.html",
     "title": "models",
     "section": "",
-    "text": "yay models"
+    "text": "The graph below shows the amount of C02 by metric tons in the world each year. After hearing from many other different sources that there carbon dioxide is increasing in the air, I predicted that my graph would also show that it is increasing.\n\n\n\n\n\nThe graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015."
   },
   {
     "objectID": "sorces.html",
@@ -46,6 +46,20 @@
     "href": "index.html",
     "title": "Carbon Dioxide and How It Is Effecting the World",
     "section": "",
-    "text": "Carbon dioxide is increasing the global temperature."
+    "text": "# A tibble: 8,729 × 4\n   country     year  temperature_change carbon_dioxide_emissions\n   &lt;chr&gt;       &lt;chr&gt;              &lt;dbl&gt;                    &lt;dbl&gt;\n 1 Afghanistan 1990              10.5                       0.58\n 2 Afghanistan 1991              -0.751                     0.35\n 3 Afghanistan 1992              -5.14                     -0.96\n 4 Afghanistan 1993               1.58                     -1.03\n 5 Afghanistan 1994               6.54                     -1.08\n 6 Afghanistan 1995               5.28                     -1.14\n 7 Afghanistan 1996               0.014                    -1.21\n 8 Afghanistan 1997               7.50                     -1.29\n 9 Afghanistan 1998              13.9                      -1.34\n10 Afghanistan 1999              18.4                      -1.57\n# ℹ 8,719 more rows\n\n\nCarbon dioxide is increasing the global temperature."
+  },
+  {
+    "objectID": "models.html#carbon-dioxide-and-temperature-change-by-year",
+    "href": "models.html#carbon-dioxide-and-temperature-change-by-year",
+    "title": "models",
+    "section": "Carbon Dioxide and Temperature Change By Year",
+    "text": "Carbon Dioxide and Temperature Change By Year"
+  },
+  {
+    "objectID": "models.html#carbon-dioxide-by-year",
+    "href": "models.html#carbon-dioxide-by-year",
+    "title": "models",
+    "section": "",
+    "text": "The graph below shows the amount of C02 by metric tons in the world each year. After hearing from many other different sources that there carbon dioxide is increasing in the air, I predicted that my graph would also show that it is increasing.\n\n\n\n\n\nThe graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015."
   }
 ]

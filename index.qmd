@@ -5,13 +5,5 @@ execute:
   message: false
   warning: false
 ---
-``` {r setup}
-library(tidyverse)
-library(janitor)
-library(scales)
-library(rstanarm)
-```
-
-
 
 Carbon dioxide is increasing the global temperature. 
