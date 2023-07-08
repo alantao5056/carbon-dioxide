@@ -19,6 +19,7 @@ temp = read.csv("data/temperature_change.csv", fileEncoding="latin1") |> clean_n
 ltemp = read.csv("data/land_temperatures.csv") |> clean_names()
 carbon = read.csv("data/carbon_dioxide_emissions.csv") |> clean_names()
 methane = read.csv("data/methane_emissions.csv") |> clean_names()
+population = read.csv("data/population.csv") |> clean_names()
 ```
 
 ```{r clean temp}
@@ -74,9 +75,18 @@ methane2 = methane |>
   arrange(country)
 ```
 
+``` {r clean population}
+population2 = population |>
+  mutate(country = country_territory,
+         population = x2020_population) |>
+  transform(population = as.numeric(population)) |>
+  select(country, population)
+```
+
 ```{r make joined}
 joined = full_join(temp2, carbon2) |>
   full_join(ltemp2) |>
+  full_join(population2) |>
   filter(country != "World")
 # joined
 ```
@@ -106,6 +116,7 @@ joined |>
 The graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015. 
 
 ## Temperature Change by Year
+The graph below shows that temperature change each year. The color of the dots represent the temperature (yellow = least, red = most). The black line is the best fit line for the points. 
 ```{r temp by Year}
 joined |>
   summarize("temperature_change_mean" = mean(temperature_change, na.rm = TRUE),
@@ -128,7 +139,7 @@ joined |>
 ```
 
 ## Land Temperature by Year
-```{r}
+```{r land temperature by year}
 ltemp2 |>
   ggplot(aes(x = year,
              y = average_temperature)) +
@@ -142,5 +153,49 @@ ltemp2 |>
        subtitle = "land temperature is slowly increasing",
        x = "Year",
        y = "Average Land Temperature (celcius)")
+```
+```{r clean joined}
+joined2 = joined |>
+  summarize("carbon_dioxide_emissions_sum" = sum(carbon_dioxide_emissions),
+            .by = country,
+            "population" = mean(population)) |>
+  drop_na() |>
+  mutate(country = ifelse(country == "United States", "USA", country)) |>
+  mutate(prop = carbon_dioxide_emissions_sum/population) |>
+  arrange(country)
+
+# joined2
+```
+``` {r make world map}
+world_map <- map_data("world")
+ggplot(joined2) + 
+  geom_map(dat=world_map, map=world_map, 
+                    aes(long, lat , map_id=region), fill="white", color="black") +
+  geom_map(map=world_map,
+                    aes(map_id=country, fill=carbon_dioxide_emissions_sum), color="black") +
+  scale_fill_continuous(labels = comma) +
+  labs(title = "Carbon Dioxide Emissions In the World",
+       subtitle = "United States and China seems to be the top contributers for carbon dioxide",
+       x = "Longitude",
+       y = "Latitude",
+       fill = "Carbon Dioxide (MtC02e)")
+```
+
+```{r make world map 2}
+ggplot(joined2) + 
+  geom_map(dat=world_map, map = world_map, 
+                    aes(long,
+                        lat,
+                        map_id = region), fill = "white", color = "black") +
+  geom_map(map=world_map,
+                    aes(map_id = country,
+                        fill = prop),
+           color="black") +
+  scale_fill_continuous(labels = comma) +
+  labs(title = "Carbon Dioxide In the World (in porportion to population)",
+      subtitle = "Canada, United States, Australia, and Botswana are the top contributers",
+      x = "Longitude",
+      y = "Latitude",
+      fill = "Carbon Dioxide / Population")
 ```
 
