@@ -78,7 +78,7 @@ methane2 = methane |>
 joined = full_join(temp2, carbon2) |>
   full_join(ltemp2) |>
   filter(country != "World")
-joined
+# joined
 ```
 
 ## Carbon Dioxide By Year
