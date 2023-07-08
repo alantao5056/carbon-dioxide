@@ -1,5 +1,17 @@
 ---
-title: "carbon-dioxide"
+title: "Carbon Dioxide and How It Is Effecting the World"
+execute:
+  echo: false
+  message: false
+  warning: false
 ---
+``` {r setup}
+library(tidyverse)
+library(janitor)
+library(scales)
+library(rstanarm)
+```
 
-## Question
+
+
+Carbon dioxide is increasing the global temperature. 
