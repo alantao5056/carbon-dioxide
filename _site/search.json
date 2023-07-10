@@ -32,7 +32,7 @@
     "href": "index.html#model-summaries",
     "title": "Carbon Dioxide and How It Is Effecting the World",
     "section": "Model Summaries",
-    "text": "Model Summaries\n\nBayesian linear model with year dependent variable and carbon dioxide as the independent variable\nBayesian linear model with year dependent variable and temperature change as the independent variable\nBayesian linear model with year dependent variable and land temperature as the independent variable\nWorld map model with country dependent variable and carbon dioxide as the independent variable\nWorld map model with country dependent variable and carbon dioxide per person as the independent variable\n\nThere has been a 50% increase in carbon dioxide from 1990 to 2018 through the rapid growth. But how does this effect our planet? And which countries are releasing the most carbon dioxide?"
+    "text": "Model Summaries\n\nBayesian linear model with year as the dependent variable and carbon dioxide as the independent variable\nBayesian linear model with year as the dependent variable and temperature change as the independent variable\nBayesian linear model with year as the dependent variable and land temperature as the independent variable\nWorld map model with country as the dependent variable and carbon dioxide as the independent variable\nWorld map model with country as the dependent variable and carbon dioxide per person as the independent variable\n\nThere has been a 50% increase in carbon dioxide from 1990 to 2018 through the rapid growth. But how does this effect our planet? And which countries are releasing the most carbon dioxide?"
   },
   {
     "objectID": "models.html",
