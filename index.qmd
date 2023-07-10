@@ -53,10 +53,10 @@ carbon2 |>
 Carbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only 1990 to 2018. 
 
 ## Model Summaries
-- Bayesian linear model with year dependent variable and carbon dioxide as the independent variable
-- Bayesian linear model with year dependent variable and temperature change as the independent variable
-- Bayesian linear model with year dependent variable and land temperature as the independent variable
-- World map model with country dependent variable and carbon dioxide as the independent variable
-- World map model with country dependent variable and carbon dioxide per person as the independent variable
+- Bayesian linear model with year as the dependent variable and carbon dioxide as the independent variable
+- Bayesian linear model with year as the dependent variable and temperature change as the independent variable
+- Bayesian linear model with year as the dependent variable and land temperature as the independent variable
+- World map model with country as the dependent variable and carbon dioxide as the independent variable
+- World map model with country as the dependent variable and carbon dioxide per person as the independent variable
 
 There has been a 50% increase in carbon dioxide from 1990 to 2018 through the rapid growth. But how does this effect our planet? And which countries are releasing the most carbon dioxide?
