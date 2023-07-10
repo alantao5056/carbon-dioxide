@@ -9,14 +9,14 @@ website:
         text: Home
       - href: about.qmd
         text: About
-      - href: sources.qmd
-        text: Sources
       - href: models.qmd
         text: Models
+      - href: sources.qmd
+        text: Sources
 
 format:
   html:
-    theme: cosmo
+    theme: united
     css: styles.css
     toc: true
 

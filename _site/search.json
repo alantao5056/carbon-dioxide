@@ -2,9 +2,37 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "About",
+    "title": "Some additional details about the website",
     "section": "",
     "text": "My name is Alan Tao, I’m going to be attending Newton North High School in September 2023.\nEmail: alantaolr@outlook.com"
+  },
+  {
+    "objectID": "about.html#about-me",
+    "href": "about.html#about-me",
+    "title": "Some additional details about the website",
+    "section": "",
+    "text": "My name is Alan Tao, I’m going to be attending Newton North High School in September 2023.\nEmail: alantaolr@outlook.com"
+  },
+  {
+    "objectID": "about.html#the-project",
+    "href": "about.html#the-project",
+    "title": "Some additional details about the website",
+    "section": "The Project",
+    "text": "The Project\n\nThis project was created as a part of Kane’s Data Science Bootcamp"
+  },
+  {
+    "objectID": "index.html#summary",
+    "href": "index.html#summary",
+    "title": "Carbon Dioxide and How It Is Effecting the World",
+    "section": "Summary",
+    "text": "Summary\nCarbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only 1990 to 2018."
+  },
+  {
+    "objectID": "index.html#model-summaries",
+    "href": "index.html#model-summaries",
+    "title": "Carbon Dioxide and How It Is Effecting the World",
+    "section": "Model Summaries",
+    "text": "Model Summaries\n\nBayesian linear model with year dependent variable and carbon dioxide as the independent variable\nBayesian linear model with year dependent variable and temperature change as the independent variable\nBayesian linear model with year dependent variable and land temperature as the independent variable\nWorld map model with country dependent variable and carbon dioxide as the independent variable\nWorld map model with country dependent variable and carbon dioxide per person as the independent variable\n\nThere has been a 50% increase in carbon dioxide from 1990 to 2018 through the rapid growth. But how does this effect our planet? And which countries are releasing the most carbon dioxide?"
   },
   {
     "objectID": "models.html",
@@ -12,48 +40,6 @@
     "title": "Models",
     "section": "",
     "text": "The graph below shows the amount of C02 by metric tons in the world each year. After hearing from many other different sources that there carbon dioxide is increasing in the air, I predicted that my graph would also show that it is increasing.\n\n\n\n\n\nThe graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015."
-  },
-  {
-    "objectID": "sorces.html",
-    "href": "sorces.html",
-    "title": "sources",
-    "section": "",
-    "text": "yay sorces"
-  },
-  {
-    "objectID": "sources.html",
-    "href": "sources.html",
-    "title": "Sources",
-    "section": "",
-    "text": "I used kaggle.com for all my datasets.\n\nhttps://www.kaggle.com/datasets/ankanhore545/carbon-dioxide-emissions-of-the-world\nhttps://www.kaggle.com/datasets/sevgisarac/temperature-change\nhttps://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data"
-  },
-  {
-    "objectID": "about.html#who-i-am",
-    "href": "about.html#who-i-am",
-    "title": "About",
-    "section": "",
-    "text": "My name is Alan Tao, I’m going to be attending Newton North High School in September 2023.\nEmail: alantaolr@outlook.com"
-  },
-  {
-    "objectID": "about.html#the-project",
-    "href": "about.html#the-project",
-    "title": "About",
-    "section": "The Project",
-    "text": "The Project\n\nThis project was created as a part of Kane’s Data Science Bootcamp"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Carbon Dioxide and How It Is Effecting the World",
-    "section": "",
-    "text": "Carbon dioxide is increasing the global temperature.\nThere has been a 50% increase in carbon dioxide from 1990 to 2018."
-  },
-  {
-    "objectID": "models.html#carbon-dioxide-and-temperature-change-by-year",
-    "href": "models.html#carbon-dioxide-and-temperature-change-by-year",
-    "title": "models",
-    "section": "Carbon Dioxide and Temperature Change By Year",
-    "text": "Carbon Dioxide and Temperature Change By Year"
   },
   {
     "objectID": "models.html#carbon-dioxide-by-year",
@@ -67,21 +53,42 @@
     "href": "models.html#temperature-change-by-year",
     "title": "Models",
     "section": "Temperature Change by Year",
-    "text": "Temperature Change by Year"
+    "text": "Temperature Change by Year\nThe graph below shows that temperature change each year. The color of the dots represent the temperature (yellow = least, red = most). The black line is the best fit line for the points.\n\n\n\n\n\nEven though the temperature change might not seem much from 1990 to 2018, it is still increasing. As long as the values are positive, the earth is going to keep warming up until we run into big problems like flooding and droughts."
   },
   {
     "objectID": "models.html#land-temperature-by-year",
     "href": "models.html#land-temperature-by-year",
     "title": "Models",
     "section": "Land Temperature by Year",
-    "text": "Land Temperature by Year"
+    "text": "Land Temperature by Year\nThis graph shows the land temperature over time. The dots mean the prediction of the land temperature at a certain year, and the lines mean the error margin. The error margin is pretty large, because of how small and precise the changes are. (note that this plot only goes up to 2013, because that was the latest temperature that it provided)\n\n\n\n\n\nSimilar to the previous plot, the land temperature is not changing that much. But from the best fit line, we can see that the temperature is also increasing."
+  },
+  {
+    "objectID": "models.html#carbon-dioxide-emmisions-by-country",
+    "href": "models.html#carbon-dioxide-emmisions-by-country",
+    "title": "Models",
+    "section": "Carbon Dioxide Emmisions by Country",
+    "text": "Carbon Dioxide Emmisions by Country\nThis plot shows the entire world map, and how much carbon dioxide is produce in each country. The more dark the color is, the more carbon dioxide it produced.\n\n\n\n\n\nUnited States and China are producing the most carbon dioxide. There are a few other countries that are also producing around 40,000, but most countries are producing little to no carbon dioxide."
+  },
+  {
+    "objectID": "models.html#carbon-dioxide-emmisions-by-country-in-proportion-to-population",
+    "href": "models.html#carbon-dioxide-emmisions-by-country-in-proportion-to-population",
+    "title": "Models",
+    "section": "Carbon Dioxide Emmisions by Country (in proportion to population)",
+    "text": "Carbon Dioxide Emmisions by Country (in proportion to population)\nThis plot is similar to the previous plot, but it divides the carbon dioxide emissions by the population of the country, giving a more accurate representation of the carbon dioxide emissions by a single person in that country. (Note: the white shows that we don’t know about that country)\n\n\n\n\n\nThis plot shows that the carbon dioxide a person produces is generally the same throughout the world. The top contributers to carbon dioxide became Canada and Botswana."
+  },
+  {
+    "objectID": "sources.html",
+    "href": "sources.html",
+    "title": "Sources",
+    "section": "",
+    "text": "I used kaggle for all my datasets.\n\nhttps://www.kaggle.com/datasets/ankanhore545/carbon-dioxide-emissions-of-the-world\nhttps://www.kaggle.com/datasets/sevgisarac/temperature-change\nhttps://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data\nhttps://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset"
   },
   {
     "objectID": "sources.html#data",
     "href": "sources.html#data",
     "title": "Sources",
     "section": "",
-    "text": "I used kaggle.com for all my datasets.\n\nhttps://www.kaggle.com/datasets/ankanhore545/carbon-dioxide-emissions-of-the-world\nhttps://www.kaggle.com/datasets/sevgisarac/temperature-change\nhttps://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data"
+    "text": "I used kaggle for all my datasets.\n\nhttps://www.kaggle.com/datasets/ankanhore545/carbon-dioxide-emissions-of-the-world\nhttps://www.kaggle.com/datasets/sevgisarac/temperature-change\nhttps://www.kaggle.com/datasets/berkeleyearth/climate-change-earth-surface-temperature-data\nhttps://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset"
   },
   {
     "objectID": "sources.html#cleaning-the-data",

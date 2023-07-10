@@ -6,6 +6,57 @@ execute:
   warning: false
 ---
 
-Carbon dioxide is increasing the global temperature. 
+```{r setup}
+library(tidyverse)
+library(janitor)
+library(scales)
+library(rstanarm)
+```
 
-There has been a 50% increase in carbon dioxide from 1990 to 2018. 
+
+```{r read initial data}
+carbon = read.csv("data/carbon_dioxide_emissions.csv") |> clean_names() |> drop_na()
+carbon2 = carbon |>
+  select(country, x2018:x1990) |>
+  mutate(x1990 = na_if(x1990, "N/A")) |>
+  drop_na() |>
+  transform(x1990 = as.numeric(x1990)) |>
+  pivot_longer(cols = x1990:x2018,
+               names_prefix = "x",
+               names_to = "year",
+               values_to = "carbon_dioxide_emissions") |>
+  transform(year = as.numeric(year)) |>
+  arrange(country)
+```
+
+
+``` {r c02 by year}
+carbon2 |>
+  summarize("carbon_dioxide_emissions_sum" = sum(carbon_dioxide_emissions, na.rm = TRUE),
+            .by=year) |>
+  ggplot(aes(x=year,
+             y=carbon_dioxide_emissions_sum,
+             group=1)) +
+  geom_point() +
+  geom_line() +
+  theme_bw() +
+  theme(axis.text.x = element_text(angle=45, hjust=1)) +
+  scale_x_continuous(limits = c(1990, 2018), breaks = seq(from=1990, to=2018, by=1)) +
+  labs(x="Year",
+       y="Carbon Dioxide Emissions (MtC02e)",
+       title="Carbon Dioxide Emissions As Time Goes On",
+       subtitle="carbon dioxide increases rapidly as time goes on")
+```
+
+## Summary
+
+Carbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only 1990 to 2018. 
+
+## Model Summaries
+- Bayesian linear model with year dependent variable and carbon dioxide as the independent variable
+- Bayesian linear model with year dependent variable and temperature change as the independent variable
+- Bayesian linear model with year dependent variable and land temperature as the independent variable
+- World map model with country dependent variable and carbon dioxide as the independent variable
+- World map model with country dependent variable and carbon dioxide per person as the independent variable
+
+There has been a 50% increase in carbon dioxide from 1990 to 2018 through the rapid growth. But how does this effect our planet? And which countries are releasing the most carbon dioxide?

@@ -1,1 +1,1 @@
-Sitemap: https://fde5c6b1-bcf8-4eb3-a504-f13539e81dad.netlify.app/sitemap.xml
+Sitemap: https://alienjao.quarto.pub/carbon-dioxide/sitemap.xml

@@ -1,8 +1,8 @@
 ---
-title: "About"
+title: "Some additional details about the website"
 ---
 
-## Who I am
+## About Me
 My name is Alan Tao, I'm going to be attending Newton North High School in September 2023.
 
 Email: alantaolr@outlook.com

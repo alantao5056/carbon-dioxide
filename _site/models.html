@@ -90,12 +90,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./sources.html" rel="" target="">
- <span class="menu-text">Sources</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link active" href="./models.html" rel="" target="" aria-current="page">
  <span class="menu-text">Models</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sources.html" rel="" target="">
+ <span class="menu-text">Sources</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -116,6 +116,8 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#carbon-dioxide-by-year" id="toc-carbon-dioxide-by-year" class="nav-link active" data-scroll-target="#carbon-dioxide-by-year">Carbon Dioxide By Year</a></li>
   <li><a href="#temperature-change-by-year" id="toc-temperature-change-by-year" class="nav-link" data-scroll-target="#temperature-change-by-year">Temperature Change by Year</a></li>
   <li><a href="#land-temperature-by-year" id="toc-land-temperature-by-year" class="nav-link" data-scroll-target="#land-temperature-by-year">Land Temperature by Year</a></li>
+  <li><a href="#carbon-dioxide-emmisions-by-country" id="toc-carbon-dioxide-emmisions-by-country" class="nav-link" data-scroll-target="#carbon-dioxide-emmisions-by-country">Carbon Dioxide Emmisions by Country</a></li>
+  <li><a href="#carbon-dioxide-emmisions-by-country-in-proportion-to-population" id="toc-carbon-dioxide-emmisions-by-country-in-proportion-to-population" class="nav-link" data-scroll-target="#carbon-dioxide-emmisions-by-country-in-proportion-to-population">Carbon Dioxide Emmisions by Country (in proportion to population)</a></li>
   </ul>
 </nav>
     </div>
@@ -151,29 +153,43 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="temperature-change-by-year" class="level2">
 <h2 class="anchored" data-anchor-id="temperature-change-by-year">Temperature Change by Year</h2>
+<p>The graph below shows that temperature change each year. The color of the dots represent the temperature (yellow = least, red = most). The black line is the best fit line for the points.</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="models_files/figure-html/temp by Year-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>Even though the temperature change might not seem much from 1990 to 2018, it is still increasing. As long as the values are positive, the earth is going to keep warming up until we run into big problems like flooding and droughts.</p>
 </section>
 <section id="land-temperature-by-year" class="level2">
 <h2 class="anchored" data-anchor-id="land-temperature-by-year">Land Temperature by Year</h2>
+<p>This graph shows the land temperature over time. The dots mean the prediction of the land temperature at a certain year, and the lines mean the error margin. The error margin is pretty large, because of how small and precise the changes are. (note that this plot only goes up to 2013, because that was the latest temperature that it provided)</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="models_files/figure-html/land temperature by year-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>Similar to the previous plot, the land temperature is not changing that much. But from the best fit line, we can see that the temperature is also increasing.</p>
+</section>
+<section id="carbon-dioxide-emmisions-by-country" class="level2">
+<h2 class="anchored" data-anchor-id="carbon-dioxide-emmisions-by-country">Carbon Dioxide Emmisions by Country</h2>
+<p>This plot shows the entire world map, and how much carbon dioxide is produce in each country. The more dark the color is, the more carbon dioxide it produced.</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="models_files/figure-html/make world map-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>United States and China are producing the most carbon dioxide. There are a few other countries that are also producing around 40,000, but most countries are producing little to no carbon dioxide.</p>
+</section>
+<section id="carbon-dioxide-emmisions-by-country-in-proportion-to-population" class="level2">
+<h2 class="anchored" data-anchor-id="carbon-dioxide-emmisions-by-country-in-proportion-to-population">Carbon Dioxide Emmisions by Country (in proportion to population)</h2>
+<p>This plot is similar to the previous plot, but it divides the carbon dioxide emissions by the population of the country, giving a more accurate representation of the carbon dioxide emissions by a single person in that country. (Note: the white shows that we don’t know about that country)</p>
 <div class="cell">
 <div class="cell-output-display">
 <p><img src="models_files/figure-html/make world map 2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
+<p>This plot shows that the carbon dioxide a person produces is generally the same throughout the world. The top contributers to carbon dioxide became Canada and Botswana.</p>
 
 
 </section>

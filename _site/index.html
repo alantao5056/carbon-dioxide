@@ -90,12 +90,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">About</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./sources.html" rel="" target="">
- <span class="menu-text">Sources</span></a>
-  </li>  
-  <li class="nav-item">
     <a class="nav-link" href="./models.html" rel="" target="">
  <span class="menu-text">Models</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sources.html" rel="" target="">
+ <span class="menu-text">Sources</span></a>
   </li>  
 </ul>
             <div class="quarto-navbar-tools ms-auto">
@@ -109,7 +109,14 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#summary" id="toc-summary" class="nav-link active" data-scroll-target="#summary">Summary</a></li>
+  <li><a href="#model-summaries" id="toc-model-summaries" class="nav-link" data-scroll-target="#model-summaries">Model Summaries</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -131,10 +138,28 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Carbon dioxide is increasing the global temperature.</p>
-<p>There has been a 50% increase in carbon dioxide from 1990 to 2018.</p>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="index_files/figure-html/c02 by year-1.png" class="img-fluid" width="672"></p>
+</div>
+</div>
+<section id="summary" class="level2">
+<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<p>Carbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only 1990 to 2018.</p>
+</section>
+<section id="model-summaries" class="level2">
+<h2 class="anchored" data-anchor-id="model-summaries">Model Summaries</h2>
+<ul>
+<li>Bayesian linear model with year dependent variable and carbon dioxide as the independent variable</li>
+<li>Bayesian linear model with year dependent variable and temperature change as the independent variable</li>
+<li>Bayesian linear model with year dependent variable and land temperature as the independent variable</li>
+<li>World map model with country dependent variable and carbon dioxide as the independent variable</li>
+<li>World map model with country dependent variable and carbon dioxide per person as the independent variable</li>
+</ul>
+<p>There has been a 50% increase in carbon dioxide from 1990 to 2018 through the rapid growth. But how does this effect our planet? And which countries are releasing the most carbon dioxide?</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
