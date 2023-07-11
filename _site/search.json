@@ -49,18 +49,18 @@
     "text": "Land Temperature by Year\nThis graph shows the land temperature over time. The dots mean the prediction of the land temperature at a certain year, and the lines mean the error margin. The error margin is pretty large, because of how small and precise the changes are. (note that this plot only goes up to 2013, because that was the latest temperature that it provided)\n\n\n\n\n\nSimilar to the previous plot, the land temperature is not changing that much. But from the best fit line, we can see that the temperature is also increasing."
   },
   {
-    "objectID": "background.html#carbon-dioxide-emmisions-by-country",
-    "href": "background.html#carbon-dioxide-emmisions-by-country",
+    "objectID": "background.html#carbon-dioxide-emissions-by-country",
+    "href": "background.html#carbon-dioxide-emissions-by-country",
     "title": "Background Data",
-    "section": "Carbon Dioxide Emmisions by Country",
-    "text": "Carbon Dioxide Emmisions by Country\nThis plot shows the entire world map, and how much carbon dioxide is produce in each country. The more dark the color is, the more carbon dioxide it produced.\n\n\n\n\n\nUnited States and China are producing the most carbon dioxide. There are a few other countries that are also producing around 40,000, but most countries are producing little to no carbon dioxide."
+    "section": "Carbon Dioxide Emissions by Country",
+    "text": "Carbon Dioxide Emissions by Country\nThis plot shows the entire world map, and how much carbon dioxide is produce in each country. The more dark the color is, the more carbon dioxide it produced.\n\n\n\n\n\nUnited States and China are producing the most carbon dioxide. There are a few other countries that are also producing around 40,000, but most countries are producing little to no carbon dioxide."
   },
   {
-    "objectID": "background.html#carbon-dioxide-emmisions-by-country-in-proportion-to-population",
-    "href": "background.html#carbon-dioxide-emmisions-by-country-in-proportion-to-population",
+    "objectID": "background.html#carbon-dioxide-emissions-by-country-in-proportion-to-population",
+    "href": "background.html#carbon-dioxide-emissions-by-country-in-proportion-to-population",
     "title": "Background Data",
-    "section": "Carbon Dioxide Emmisions by Country (in proportion to population)",
-    "text": "Carbon Dioxide Emmisions by Country (in proportion to population)\nThis plot is similar to the previous plot, but it divides the carbon dioxide emissions by the population of the country, giving a more accurate representation of the carbon dioxide emissions by a single person in that country. (Note: the white shows that we don’t know about that country)\n\n\n\n\n\nThis plot shows that the carbon dioxide a person produces is generally the same throughout the world. The top contributers to carbon dioxide became Canada and Botswana."
+    "section": "Carbon Dioxide Emissions by Country (in proportion to population)",
+    "text": "Carbon Dioxide Emissions by Country (in proportion to population)\nThis plot is similar to the previous plot, but it divides the carbon dioxide emissions by the population of the country, giving a more accurate representation of the carbon dioxide emissions by a single person in that country. (Note: the white shows that we don’t know about that country)\n\n\n\n\n\nThis plot shows that the carbon dioxide a person produces is generally the same throughout the world. The top contributors to carbon dioxide became Canada and Botswana."
   },
   {
     "objectID": "index.html#summary",
