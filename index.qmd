@@ -1,5 +1,5 @@
 ---
-title: "Carbon Dioxide and How It Is Effecting the World"
+title: "Carbon Dioxide and Temperature Over Time"
 execute:
   echo: false
   message: false
@@ -15,23 +15,12 @@ library(rstanarm)
 
 
 ```{r read initial data}
-carbon = read.csv("data/carbon_dioxide_emissions.csv") |> clean_names() |> drop_na()
-carbon2 = carbon |>
-  select(country, x2018:x1990) |>
-  mutate(x1990 = na_if(x1990, "N/A")) |>
-  drop_na() |>
-  transform(x1990 = as.numeric(x1990)) |>
-  pivot_longer(cols = x1990:x2018,
-               names_prefix = "x",
-               names_to = "year",
-               values_to = "carbon_dioxide_emissions") |>
-  transform(year = as.numeric(year)) |>
-  arrange(country)
+joined = read_csv("data/joined.csv")
 ```
 
 
 ``` {r c02 by year}
-carbon2 |>
+joined |>
   summarize("carbon_dioxide_emissions_sum" = sum(carbon_dioxide_emissions, na.rm = TRUE),
             .by=year) |>
   ggplot(aes(x=year,
@@ -42,6 +31,9 @@ carbon2 |>
   theme_bw() +
   theme(axis.text.x = element_text(angle=45, hjust=1)) +
   scale_x_continuous(limits = c(1990, 2018), breaks = seq(from=1990, to=2018, by=1)) +
+  scale_y_continuous(limits = c(25000, 40000),
+                     breaks = seq(20000, 40000, 2500),
+                     labels = scales::comma_format()) +
   labs(x="Year",
        y="Carbon Dioxide Emissions (MtC02e)",
        title="Carbon Dioxide Emissions As Time Goes On",
@@ -53,10 +45,9 @@ carbon2 |>
 Carbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only 1990 to 2018. 
 
 ## Model Summaries
-- Bayesian linear model with year as the dependent variable and carbon dioxide as the independent variable
-- Bayesian linear model with year as the dependent variable and temperature change as the independent variable
-- Bayesian linear model with year as the dependent variable and land temperature as the independent variable
-- World map model with country as the dependent variable and carbon dioxide as the independent variable
-- World map model with country as the dependent variable and carbon dioxide per person as the independent variable
 
-There has been a 50% increase in carbon dioxide from 1990 to 2018 through the rapid growth. But how does this effect our planet? And which countries are releasing the most carbon dioxide?
+- Bayesian regression model with carbon dioxide emissions as the dependent variable and year as the independent variable
+- Bayesian regression model with average land temperature as the dependent variable and year as the independent variable
+
+## Takeaway
+Around 53,000 (+/- 2000) metric tons of carbon dioxide is going to be in the year 2025 and the average land temperature is going to be 20.6 C (+/- 0.6). 

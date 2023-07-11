@@ -2,13 +2,15 @@ project:
   type: website
 
 website:
-  title: "Carbon Dioxide and How It Is Effecting the World"
+  title: "Carbon Dioxide and Temperature Over Time"
   navbar:
     left:
       - href: index.qmd
         text: Home
       - href: about.qmd
         text: About
+      - href: background.qmd
+        text: Background Data
       - href: models.qmd
         text: Models
       - href: sources.qmd

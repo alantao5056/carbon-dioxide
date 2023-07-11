@@ -21,60 +21,88 @@
     "text": "The Project\n\nThis project was created as a part of Kane’s Data Science Bootcamp"
   },
   {
+    "objectID": "background.html",
+    "href": "background.html",
+    "title": "Background Data",
+    "section": "",
+    "text": "The graph below shows the amount of C02 by metric tons in the world each year. After hearing from many other different sources that there carbon dioxide is increasing in the air, I predicted that my graph would also show that it is increasing.\n\n\n\n\n\nThe graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015."
+  },
+  {
+    "objectID": "background.html#carbon-dioxide-by-year",
+    "href": "background.html#carbon-dioxide-by-year",
+    "title": "Background Data",
+    "section": "",
+    "text": "The graph below shows the amount of C02 by metric tons in the world each year. After hearing from many other different sources that there carbon dioxide is increasing in the air, I predicted that my graph would also show that it is increasing.\n\n\n\n\n\nThe graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015."
+  },
+  {
+    "objectID": "background.html#temperature-change-by-year",
+    "href": "background.html#temperature-change-by-year",
+    "title": "Background Data",
+    "section": "Temperature Change by Year",
+    "text": "Temperature Change by Year\nThe graph below shows that temperature change each year. The color of the dots represent the temperature (yellow = least, red = most). The black line is the best fit line for the points.\n\n\n\n\n\nEven though the temperature change might not seem much from 1990 to 2018, it is still increasing. As long as the values are positive, the earth is going to keep warming up until we run into big problems like flooding and droughts."
+  },
+  {
+    "objectID": "background.html#land-temperature-by-year",
+    "href": "background.html#land-temperature-by-year",
+    "title": "Background Data",
+    "section": "Land Temperature by Year",
+    "text": "Land Temperature by Year\nThis graph shows the land temperature over time. The dots mean the prediction of the land temperature at a certain year, and the lines mean the error margin. The error margin is pretty large, because of how small and precise the changes are. (note that this plot only goes up to 2013, because that was the latest temperature that it provided)\n\n\n\n\n\nSimilar to the previous plot, the land temperature is not changing that much. But from the best fit line, we can see that the temperature is also increasing."
+  },
+  {
+    "objectID": "background.html#carbon-dioxide-emmisions-by-country",
+    "href": "background.html#carbon-dioxide-emmisions-by-country",
+    "title": "Background Data",
+    "section": "Carbon Dioxide Emmisions by Country",
+    "text": "Carbon Dioxide Emmisions by Country\nThis plot shows the entire world map, and how much carbon dioxide is produce in each country. The more dark the color is, the more carbon dioxide it produced.\n\n\n\n\n\nUnited States and China are producing the most carbon dioxide. There are a few other countries that are also producing around 40,000, but most countries are producing little to no carbon dioxide."
+  },
+  {
+    "objectID": "background.html#carbon-dioxide-emmisions-by-country-in-proportion-to-population",
+    "href": "background.html#carbon-dioxide-emmisions-by-country-in-proportion-to-population",
+    "title": "Background Data",
+    "section": "Carbon Dioxide Emmisions by Country (in proportion to population)",
+    "text": "Carbon Dioxide Emmisions by Country (in proportion to population)\nThis plot is similar to the previous plot, but it divides the carbon dioxide emissions by the population of the country, giving a more accurate representation of the carbon dioxide emissions by a single person in that country. (Note: the white shows that we don’t know about that country)\n\n\n\n\n\nThis plot shows that the carbon dioxide a person produces is generally the same throughout the world. The top contributers to carbon dioxide became Canada and Botswana."
+  },
+  {
     "objectID": "index.html#summary",
     "href": "index.html#summary",
-    "title": "Carbon Dioxide and How It Is Effecting the World",
+    "title": "Carbon Dioxide and Temperature Over Time",
     "section": "Summary",
     "text": "Summary\nCarbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only 1990 to 2018."
   },
   {
     "objectID": "index.html#model-summaries",
     "href": "index.html#model-summaries",
-    "title": "Carbon Dioxide and How It Is Effecting the World",
+    "title": "Carbon Dioxide and Temperature Over Time",
     "section": "Model Summaries",
-    "text": "Model Summaries\n\nBayesian linear model with year as the dependent variable and carbon dioxide as the independent variable\nBayesian linear model with year as the dependent variable and temperature change as the independent variable\nBayesian linear model with year as the dependent variable and land temperature as the independent variable\nWorld map model with country as the dependent variable and carbon dioxide as the independent variable\nWorld map model with country as the dependent variable and carbon dioxide per person as the independent variable\n\nThere has been a 50% increase in carbon dioxide from 1990 to 2018 through the rapid growth. But how does this effect our planet? And which countries are releasing the most carbon dioxide?"
+    "text": "Model Summaries\n\nBayesian regression model with carbon dioxide emissions as the dependent variable and year as the independent variable\nBayesian regression model with average land temperature as the dependent variable and year as the independent variable"
+  },
+  {
+    "objectID": "index.html#takeaway",
+    "href": "index.html#takeaway",
+    "title": "Carbon Dioxide and Temperature Over Time",
+    "section": "Takeaway",
+    "text": "Takeaway\nAround 53,000 (+/- 2000) metric tons of carbon dioxide is going to be in the year 2025 and the average land temperature is going to be 20.6 C (+/- 0.6)."
   },
   {
     "objectID": "models.html",
     "href": "models.html",
     "title": "Models",
     "section": "",
-    "text": "The graph below shows the amount of C02 by metric tons in the world each year. After hearing from many other different sources that there carbon dioxide is increasing in the air, I predicted that my graph would also show that it is increasing.\n\n\n\n\n\nThe graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015."
+    "text": "\\[y_i = \\beta_0  + \\beta_1 x_{1,i} + \\epsilon_i\\]\nwith \\(y = carbon\\_dioxide\\_emissions\\), \\(x_1 = year\\), and \\(\\epsilon_i \\sim N(0, \\sigma^2)\\).\n\n\n\n\n\nstan_glm\n family:       gaussian [identity]\n formula:      carbon_dioxide_emissions_sum ~ year\n observations: 29\n predictors:   2\n------\n            Median    MAD_SD   \n(Intercept) -937530.5   37412.8\nyear            483.1      18.7\n\nAuxiliary parameter(s):\n      Median MAD_SD\nsigma 830.3  117.3 \n\n------\n* For help interpreting the printed output see ?print.stanreg\n* For info on the priors used see ?prior_summary.stanreg"
   },
   {
-    "objectID": "models.html#carbon-dioxide-by-year",
-    "href": "models.html#carbon-dioxide-by-year",
+    "objectID": "models.html#how-much-carbon-dioxide-is-going-to-be-in-the-air-in-2050",
+    "href": "models.html#how-much-carbon-dioxide-is-going-to-be-in-the-air-in-2050",
     "title": "Models",
     "section": "",
-    "text": "The graph below shows the amount of C02 by metric tons in the world each year. After hearing from many other different sources that there carbon dioxide is increasing in the air, I predicted that my graph would also show that it is increasing.\n\n\n\n\n\nThe graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015."
+    "text": "\\[y_i = \\beta_0  + \\beta_1 x_{1,i} + \\epsilon_i\\]\nwith \\(y = carbon\\_dioxide\\_emissions\\), \\(x_1 = year\\), and \\(\\epsilon_i \\sim N(0, \\sigma^2)\\).\n\n\n\n\n\nstan_glm\n family:       gaussian [identity]\n formula:      carbon_dioxide_emissions_sum ~ year\n observations: 29\n predictors:   2\n------\n            Median    MAD_SD   \n(Intercept) -937530.5   37412.8\nyear            483.1      18.7\n\nAuxiliary parameter(s):\n      Median MAD_SD\nsigma 830.3  117.3 \n\n------\n* For help interpreting the printed output see ?print.stanreg\n* For info on the priors used see ?prior_summary.stanreg"
   },
   {
-    "objectID": "models.html#temperature-change-by-year",
-    "href": "models.html#temperature-change-by-year",
+    "objectID": "models.html#what-is-going-to-be-the-average-land-temperature-in-2050",
+    "href": "models.html#what-is-going-to-be-the-average-land-temperature-in-2050",
     "title": "Models",
-    "section": "Temperature Change by Year",
-    "text": "Temperature Change by Year\nThe graph below shows that temperature change each year. The color of the dots represent the temperature (yellow = least, red = most). The black line is the best fit line for the points.\n\n\n\n\n\nEven though the temperature change might not seem much from 1990 to 2018, it is still increasing. As long as the values are positive, the earth is going to keep warming up until we run into big problems like flooding and droughts."
-  },
-  {
-    "objectID": "models.html#land-temperature-by-year",
-    "href": "models.html#land-temperature-by-year",
-    "title": "Models",
-    "section": "Land Temperature by Year",
-    "text": "Land Temperature by Year\nThis graph shows the land temperature over time. The dots mean the prediction of the land temperature at a certain year, and the lines mean the error margin. The error margin is pretty large, because of how small and precise the changes are. (note that this plot only goes up to 2013, because that was the latest temperature that it provided)\n\n\n\n\n\nSimilar to the previous plot, the land temperature is not changing that much. But from the best fit line, we can see that the temperature is also increasing."
-  },
-  {
-    "objectID": "models.html#carbon-dioxide-emmisions-by-country",
-    "href": "models.html#carbon-dioxide-emmisions-by-country",
-    "title": "Models",
-    "section": "Carbon Dioxide Emmisions by Country",
-    "text": "Carbon Dioxide Emmisions by Country\nThis plot shows the entire world map, and how much carbon dioxide is produce in each country. The more dark the color is, the more carbon dioxide it produced.\n\n\n\n\n\nUnited States and China are producing the most carbon dioxide. There are a few other countries that are also producing around 40,000, but most countries are producing little to no carbon dioxide."
-  },
-  {
-    "objectID": "models.html#carbon-dioxide-emmisions-by-country-in-proportion-to-population",
-    "href": "models.html#carbon-dioxide-emmisions-by-country-in-proportion-to-population",
-    "title": "Models",
-    "section": "Carbon Dioxide Emmisions by Country (in proportion to population)",
-    "text": "Carbon Dioxide Emmisions by Country (in proportion to population)\nThis plot is similar to the previous plot, but it divides the carbon dioxide emissions by the population of the country, giving a more accurate representation of the carbon dioxide emissions by a single person in that country. (Note: the white shows that we don’t know about that country)\n\n\n\n\n\nThis plot shows that the carbon dioxide a person produces is generally the same throughout the world. The top contributers to carbon dioxide became Canada and Botswana."
+    "section": "What is going to be the average land temperature in 2050?",
+    "text": "What is going to be the average land temperature in 2050?\n\nModel Definition\n\\[y_i = \\beta_0  + \\beta_1 x_{1,i} + \\epsilon_i\\]\nwith \\(y = average\\_land\\_temperature\\), \\(x_1 = year\\), and \\(\\epsilon_i \\sim N(0, \\sigma^2)\\).\n\n\nFitted Model\n\n\nstan_glm\n family:       gaussian [identity]\n formula:      land_temperature_avg ~ year\n observations: 24\n predictors:   2\n------\n            Median MAD_SD\n(Intercept) -32.6    9.3 \nyear          0.0    0.0 \n\nAuxiliary parameter(s):\n      Median MAD_SD\nsigma 0.2    0.0   \n\n------\n* For help interpreting the printed output see ?print.stanreg\n* For info on the priors used see ?prior_summary.stanreg\n\n\n\n\nPlot"
   },
   {
     "objectID": "sources.html",

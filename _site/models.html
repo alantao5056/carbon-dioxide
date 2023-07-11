@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Carbon Dioxide and How It Is Effecting the World - Models</title>
+<title>Carbon Dioxide and Temperature Over Time - Models</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -60,6 +60,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -72,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">Carbon Dioxide and How It Is Effecting the World</span>
+    <span class="navbar-title">Carbon Dioxide and Temperature Over Time</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -88,6 +90,10 @@ ul.task-list li input[type="checkbox"] {
   <li class="nav-item">
     <a class="nav-link" href="./about.html" rel="" target="">
  <span class="menu-text">About</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./background.html" rel="" target="">
+ <span class="menu-text">Background Data</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link active" href="./models.html" rel="" target="" aria-current="page">
@@ -113,11 +119,18 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#carbon-dioxide-by-year" id="toc-carbon-dioxide-by-year" class="nav-link active" data-scroll-target="#carbon-dioxide-by-year">Carbon Dioxide By Year</a></li>
-  <li><a href="#temperature-change-by-year" id="toc-temperature-change-by-year" class="nav-link" data-scroll-target="#temperature-change-by-year">Temperature Change by Year</a></li>
-  <li><a href="#land-temperature-by-year" id="toc-land-temperature-by-year" class="nav-link" data-scroll-target="#land-temperature-by-year">Land Temperature by Year</a></li>
-  <li><a href="#carbon-dioxide-emmisions-by-country" id="toc-carbon-dioxide-emmisions-by-country" class="nav-link" data-scroll-target="#carbon-dioxide-emmisions-by-country">Carbon Dioxide Emmisions by Country</a></li>
-  <li><a href="#carbon-dioxide-emmisions-by-country-in-proportion-to-population" id="toc-carbon-dioxide-emmisions-by-country-in-proportion-to-population" class="nav-link" data-scroll-target="#carbon-dioxide-emmisions-by-country-in-proportion-to-population">Carbon Dioxide Emmisions by Country (in proportion to population)</a></li>
+  <li><a href="#how-much-carbon-dioxide-is-going-to-be-in-the-air-in-2050" id="toc-how-much-carbon-dioxide-is-going-to-be-in-the-air-in-2050" class="nav-link active" data-scroll-target="#how-much-carbon-dioxide-is-going-to-be-in-the-air-in-2050">How much carbon dioxide is going to be in the air in 2050?</a>
+  <ul class="collapse">
+  <li><a href="#model-definition" id="toc-model-definition" class="nav-link" data-scroll-target="#model-definition">Model Definition</a></li>
+  <li><a href="#fitted-model" id="toc-fitted-model" class="nav-link" data-scroll-target="#fitted-model">Fitted Model</a></li>
+  <li><a href="#plot" id="toc-plot" class="nav-link" data-scroll-target="#plot">Plot</a></li>
+  </ul></li>
+  <li><a href="#what-is-going-to-be-the-average-land-temperature-in-2050" id="toc-what-is-going-to-be-the-average-land-temperature-in-2050" class="nav-link" data-scroll-target="#what-is-going-to-be-the-average-land-temperature-in-2050">What is going to be the average land temperature in 2050?</a>
+  <ul class="collapse">
+  <li><a href="#model-definition-1" id="toc-model-definition-1" class="nav-link" data-scroll-target="#model-definition-1">Model Definition</a></li>
+  <li><a href="#fitted-model-1" id="toc-fitted-model-1" class="nav-link" data-scroll-target="#fitted-model-1">Fitted Model</a></li>
+  <li><a href="#plot-1" id="toc-plot-1" class="nav-link" data-scroll-target="#plot-1">Plot</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -141,57 +154,87 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="carbon-dioxide-by-year" class="level2">
-<h2 class="anchored" data-anchor-id="carbon-dioxide-by-year">Carbon Dioxide By Year</h2>
-<p>The graph below shows the amount of C02 by metric tons in the world each year. After hearing from many other different sources that there carbon dioxide is increasing in the air, I predicted that my graph would also show that it is increasing.</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="models_files/figure-html/c02 by year-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>The graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015.</p>
+<section id="how-much-carbon-dioxide-is-going-to-be-in-the-air-in-2050" class="level2">
+<h2 class="anchored" data-anchor-id="how-much-carbon-dioxide-is-going-to-be-in-the-air-in-2050">How much carbon dioxide is going to be in the air in 2050?</h2>
+<section id="model-definition" class="level3">
+<h3 class="anchored" data-anchor-id="model-definition">Model Definition</h3>
+<p><span class="math display">\[y_i = \beta_0  + \beta_1 x_{1,i} + \epsilon_i\]</span></p>
+<p>with <span class="math inline">\(y = carbon\_dioxide\_emissions\)</span>, <span class="math inline">\(x_1 = year\)</span>, and <span class="math inline">\(\epsilon_i \sim N(0, \sigma^2)\)</span>.</p>
 </section>
-<section id="temperature-change-by-year" class="level2">
-<h2 class="anchored" data-anchor-id="temperature-change-by-year">Temperature Change by Year</h2>
-<p>The graph below shows that temperature change each year. The color of the dots represent the temperature (yellow = least, red = most). The black line is the best fit line for the points.</p>
+<section id="fitted-model" class="level3">
+<h3 class="anchored" data-anchor-id="fitted-model">Fitted Model</h3>
 <div class="cell">
-<div class="cell-output-display">
-<p><img src="models_files/figure-html/temp by Year-1.png" class="img-fluid" width="672"></p>
+<div class="cell-output cell-output-stdout">
+<pre><code>stan_glm
+ family:       gaussian [identity]
+ formula:      carbon_dioxide_emissions_sum ~ year
+ observations: 29
+ predictors:   2
+------
+            Median    MAD_SD   
+(Intercept) -937530.5   37412.8
+year            483.1      18.7
+
+Auxiliary parameter(s):
+      Median MAD_SD
+sigma 830.3  117.3 
+
+------
+* For help interpreting the printed output see ?print.stanreg
+* For info on the priors used see ?prior_summary.stanreg</code></pre>
 </div>
 </div>
-<p>Even though the temperature change might not seem much from 1990 to 2018, it is still increasing. As long as the values are positive, the earth is going to keep warming up until we run into big problems like flooding and droughts.</p>
 </section>
-<section id="land-temperature-by-year" class="level2">
-<h2 class="anchored" data-anchor-id="land-temperature-by-year">Land Temperature by Year</h2>
-<p>This graph shows the land temperature over time. The dots mean the prediction of the land temperature at a certain year, and the lines mean the error margin. The error margin is pretty large, because of how small and precise the changes are. (note that this plot only goes up to 2013, because that was the latest temperature that it provided)</p>
+<section id="plot" class="level3">
+<h3 class="anchored" data-anchor-id="plot">Plot</h3>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="models_files/figure-html/land temperature by year-1.png" class="img-fluid" width="672"></p>
+<p><img src="models_files/figure-html/plot 1-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>Similar to the previous plot, the land temperature is not changing that much. But from the best fit line, we can see that the temperature is also increasing.</p>
 </section>
-<section id="carbon-dioxide-emmisions-by-country" class="level2">
-<h2 class="anchored" data-anchor-id="carbon-dioxide-emmisions-by-country">Carbon Dioxide Emmisions by Country</h2>
-<p>This plot shows the entire world map, and how much carbon dioxide is produce in each country. The more dark the color is, the more carbon dioxide it produced.</p>
-<div class="cell">
-<div class="cell-output-display">
-<p><img src="models_files/figure-html/make world map-1.png" class="img-fluid" width="672"></p>
-</div>
-</div>
-<p>United States and China are producing the most carbon dioxide. There are a few other countries that are also producing around 40,000, but most countries are producing little to no carbon dioxide.</p>
 </section>
-<section id="carbon-dioxide-emmisions-by-country-in-proportion-to-population" class="level2">
-<h2 class="anchored" data-anchor-id="carbon-dioxide-emmisions-by-country-in-proportion-to-population">Carbon Dioxide Emmisions by Country (in proportion to population)</h2>
-<p>This plot is similar to the previous plot, but it divides the carbon dioxide emissions by the population of the country, giving a more accurate representation of the carbon dioxide emissions by a single person in that country. (Note: the white shows that we don’t know about that country)</p>
+<section id="what-is-going-to-be-the-average-land-temperature-in-2050" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-going-to-be-the-average-land-temperature-in-2050">What is going to be the average land temperature in 2050?</h2>
+<section id="model-definition-1" class="level3">
+<h3 class="anchored" data-anchor-id="model-definition-1">Model Definition</h3>
+<p><span class="math display">\[y_i = \beta_0  + \beta_1 x_{1,i} + \epsilon_i\]</span></p>
+<p>with <span class="math inline">\(y = average\_land\_temperature\)</span>, <span class="math inline">\(x_1 = year\)</span>, and <span class="math inline">\(\epsilon_i \sim N(0, \sigma^2)\)</span>.</p>
+</section>
+<section id="fitted-model-1" class="level3">
+<h3 class="anchored" data-anchor-id="fitted-model-1">Fitted Model</h3>
+<div class="cell">
+<div class="cell-output cell-output-stdout">
+<pre><code>stan_glm
+ family:       gaussian [identity]
+ formula:      land_temperature_avg ~ year
+ observations: 24
+ predictors:   2
+------
+            Median MAD_SD
+(Intercept) -32.6    9.3 
+year          0.0    0.0 
+
+Auxiliary parameter(s):
+      Median MAD_SD
+sigma 0.2    0.0   
+
+------
+* For help interpreting the printed output see ?print.stanreg
+* For info on the priors used see ?prior_summary.stanreg</code></pre>
+</div>
+</div>
+</section>
+<section id="plot-1" class="level3">
+<h3 class="anchored" data-anchor-id="plot-1">Plot</h3>
 <div class="cell">
 <div class="cell-output-display">
-<p><img src="models_files/figure-html/make world map 2-1.png" class="img-fluid" width="672"></p>
+<p><img src="models_files/figure-html/plot 2-1.png" class="img-fluid" width="672"></p>
 </div>
 </div>
-<p>This plot shows that the carbon dioxide a person produces is generally the same throughout the world. The top contributers to carbon dioxide became Canada and Botswana.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
