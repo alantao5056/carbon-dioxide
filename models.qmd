@@ -7,7 +7,7 @@ execute:
   warning: false
 ---
 
-``` {r setup}
+```{r setup}
 library(tidyverse)
 library(janitor)
 library(scales)
@@ -42,6 +42,7 @@ fit_obj <- stan_glm(formula = carbon_dioxide_emissions_sum ~ year,
                     seed = 9)
 fit_obj
 ```
+
 ### Plot
 
 ```{r posterior epred 1}
@@ -72,6 +73,7 @@ $$y_i = \beta_0  + \beta_1 x_{1,i} + \epsilon_i$$
 with $y = average\_land\_temperature$, $x_1 = year$, and $\epsilon_i \sim N(0, \sigma^2)$.
 
 ### Fitted Model
+
 ```{r model 2}
 fit_obj2 <- stan_glm(formula = land_temperature_avg ~ year,
                     data = joined_by_year,
@@ -100,4 +102,3 @@ pe2 |>
        x = "Temperature (C)",
        y = "Percent")
 ```
-
