@@ -67,21 +67,21 @@
     "href": "index.html#summary",
     "title": "Carbon Dioxide and Temperature Over Time",
     "section": "Summary",
-    "text": "Summary\nCarbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only 1990 to 2018."
+    "text": "Summary\nCarbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only the years 1990 to 2018."
   },
   {
     "objectID": "index.html#model-summaries",
     "href": "index.html#model-summaries",
     "title": "Carbon Dioxide and Temperature Over Time",
     "section": "Model Summaries",
-    "text": "Model Summaries\n\nBayesian regression model with carbon dioxide emissions as the dependent variable and year as the independent variable\nBayesian regression model with average land temperature as the dependent variable and year as the independent variable"
+    "text": "Model Summaries\nI made 2 Bayesian regression models.\n\nBayesian regression model with carbon dioxide emissions as the dependent variable and year as the independent variable\nBayesian regression model with average land temperature as the dependent variable and year as the independent variable"
   },
   {
     "objectID": "index.html#takeaway",
     "href": "index.html#takeaway",
     "title": "Carbon Dioxide and Temperature Over Time",
     "section": "Takeaway",
-    "text": "Takeaway\nAround 53,000 (+/- 2000) metric tons of carbon dioxide is going to be in the year 2025 and the average land temperature is going to be 20.6 C (+/- 0.6)."
+    "text": "Takeaway\nAround 53,000 (+/- 2000) metric tons of carbon dioxide is going to be in the year 2050 and the average land temperature is going to be 20.6 C (+/- 0.6)."
   },
   {
     "objectID": "models.html",

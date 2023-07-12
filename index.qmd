@@ -36,18 +36,39 @@ joined |>
                      labels = scales::comma_format()) +
   labs(x="Year",
        y="Carbon Dioxide Emissions (MtC02e)",
-       title="Carbon Dioxide Emissions As Time Goes On",
-       subtitle="carbon dioxide increases rapidly as time goes on")
+       title="Carbon Dioxide Emissions By Year",
+       subtitle="carbon dioxide increases rapidly and has spiked in 1997 and 2010")
 ```
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
 
 ## Summary
 
-Carbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only 1990 to 2018. 
+Carbon dioxide is increasing the global temperature. The data I used were pulled from various different data sets, including carbon dioxide emissions, temperature change, land temperature, and population on kaggle. I grouped them together by country and year. I also shortened them to only the years 1990 to 2018. 
 
 ## Model Summaries
+I made 2 Bayesian regression models.
 
-- Bayesian regression model with carbon dioxide emissions as the dependent variable and year as the independent variable
-- Bayesian regression model with average land temperature as the dependent variable and year as the independent variable
+1. Bayesian regression model with carbon dioxide emissions as the dependent variable and year as the independent variable
+2. Bayesian regression model with average land temperature as the dependent variable and year as the independent variable
 
 ## Takeaway
-Around 53,000 (+/- 2000) metric tons of carbon dioxide is going to be in the year 2025 and the average land temperature is going to be 20.6 C (+/- 0.6). 
+Around 53,000 (+/- 2000) metric tons of carbon dioxide is going to be in the year 2050 and the average land temperature is going to be 20.6 C (+/- 0.6). 

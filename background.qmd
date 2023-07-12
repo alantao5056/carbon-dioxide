@@ -40,8 +40,8 @@ joined |>
                      labels = scales::comma_format()) +
   labs(x="Year",
        y="Carbon Dioxide Emissions (MtC02e)",
-       title="Carbon Dioxide Emissions As Time Goes On",
-       subtitle="carbon dioxide increases rapidly as time goes on")
+       title="Carbon Dioxide Emissions By Year",
+       subtitle="carbon dioxide increases rapidly and has spiked in 1997 and 2010")
 ```
 
 The graph shows a strong positive correlation between year and carbon dioxide, but there are still some times when carbon dioxide has decreased for a short period. These times include 1992, 1998, 1999, 2009, 2011 and 2015.
@@ -65,8 +65,8 @@ joined |>
   theme(axis.text.x = element_text(angle=45, hjust=1),
         legend.position = "none") +
   scale_x_continuous(limits = c(1990, 2018), breaks = seq(from=1990, to=2018, by=1)) +
-  labs(title = "Temperature Change Over Time",
-       subtitle = "temperature is changing faster and faster",
+  labs(title = "Temperature Change By Year",
+       subtitle = "temperature change was staying generally the same from 2001 to 2011",
        x = "Year",
        y = "Temperature Change (Celcius)")
 ```
@@ -87,8 +87,8 @@ joined |>
   theme_bw() +
   theme(axis.text.x = element_text(angle=45, hjust=1)) +
   scale_x_continuous(limits = c(1990, 2013), breaks = seq(from=1990, to=2013, by=1)) +
-  labs(title = "Land Temperature by Year",
-       subtitle = "land temperature is slowly increasing",
+  labs(title = "Land Temperature By Year",
+       subtitle = "land temperature spiked in 2013",
        x = "Year",
        y = "Average Land Temperature (Celcius)")
 ```
